@@ -1,0 +1,64 @@
+.container{
+  position: relative;
+  margin-top: 5rem;
+  text-align: center;
+}
+#bg-image{
+  background-image: url('/../images/plateform_login_img.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 300px 637px;
+  opacity:0.5;
+}
+
+.mode{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+.back{
+  left: 0;
+}
+
+input[type=email], input[type=password] {
+    width: 100%;
+    margin: 5px 0 22px 0;
+    background: transparent;
+  }
+  input[type=email]:focus, input[type=password]:focus {
+    outline: none;
+  }
+  .logo{
+    margin-bottom: 200px;
+  }
+  .btn:hover {
+    opacity: 1;
+  }
+  
+.out{
+  border: none;
+}
+.icon {
+    padding: 15px 10px 10px 270px;
+    min-width: 40px;
+}
+.forgot{
+  color: #0dcaf0;
+}
+a{ text-decoration: none;}
+footer{
+ 
+  bottom: 0;
+  text-align: center;
+  margin: 9rem auto 0 auto;
+}
+
+@media screen  and (max-width:360px){
+  .logo{
+    display: none;
+  }
+ .back{
+  margin-top: 200px;
+ }
+}
+ 
