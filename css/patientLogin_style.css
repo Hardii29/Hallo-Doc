@@ -7,7 +7,7 @@
   background-image: url('/../images/plateform_login_img.jpg');
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 300px 637px;
+  background-size: 360px 700px;
   opacity:0.5;
 }
 
@@ -47,7 +47,6 @@ input[type=email], input[type=password] {
 }
 a{ text-decoration: none;}
 footer{
- 
   bottom: 0;
   text-align: center;
   margin: 9rem auto 0 auto;
@@ -57,7 +56,7 @@ footer{
   .logo{
     display: none;
   }
- .back{
+ .login-form{
   margin-top: 200px;
  }
 }
