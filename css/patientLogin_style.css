@@ -1,16 +1,20 @@
 .container{
   position: relative;
   margin-top: 5rem;
+  z-index: 1;
+  
+}
+.bg-image{
+z-index: -1;
+background: url('/../images/plateform_login_img.jpg') center center;
+position: absolute;
+opacity:0.5;
+height: 700px;
+width: 360px;
+}
+.content{
   text-align: center;
 }
-#bg-image{
-  background-image: url('/../images/plateform_login_img.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 360px 700px;
-  opacity:0.5;
-}
-
 .mode{
     position: absolute;
     right: 0;
@@ -19,7 +23,24 @@
 .back{
   left: 0;
 }
-
+.fontuser{
+  position: relative;
+}
+.fontuser i{
+  position: absolute;
+  right: 15px; 
+           top: 8px; 
+            color: gray;
+}
+.fontpass{
+  position: relative;
+}
+.fontpass i{
+  position: absolute;
+  right: 15px; 
+           top: 8px; 
+            color: gray;
+}
 input[type=email], input[type=password] {
     width: 100%;
     margin: 5px 0 22px 0;
