@@ -1,20 +1,30 @@
-.container{
+
+.container {
   position: relative;
-  margin-top: 5rem;
-  z-index: 1;
-  
+  height: 90vh;
 }
-.bg-image{
-z-index: -1;
-background: url('/../images/plateform_login_img.jpg') center center;
-position: absolute;
-opacity:0.5;
-height: 700px;
-width: 360px;
+
+.container::before {
+  content: '';
+  background-image: url("./../images/plateform_login_img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+  z-index: -1;
 }
-.content{
+
+.content {
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
+
 .mode{
     position: absolute;
     right: 0;
@@ -28,8 +38,8 @@ width: 360px;
 }
 .fontuser i{
   position: absolute;
-  right: 15px; 
-           top: 8px; 
+  right: 1rem; 
+           top: 1rem; 
             color: gray;
 }
 .fontpass{
@@ -37,8 +47,8 @@ width: 360px;
 }
 .fontpass i{
   position: absolute;
-  right: 15px; 
-           top: 8px; 
+  right: 1rem; 
+           top: 1rem; 
             color: gray;
 }
 input[type=email], input[type=password] {
@@ -60,19 +70,25 @@ input[type=email], input[type=password] {
   border: none;
 }
 .icon {
-    padding: 15px 10px 10px 270px;
+    padding: 5rem 1rem 1rem 15rem;
     min-width: 40px;
 }
 .forgot{
   color: #0dcaf0;
+  margin-top: 3rem;
 }
 a{ text-decoration: none;}
 footer{
   bottom: 0;
   text-align: center;
-  margin: 9rem auto 0 auto;
+  margin: 2rem auto 0 auto;
 }
 
+@media screen  and (max-width:900px){
+.form-control{
+  margin: 2px;
+}
+}
 @media screen  and (max-width:360px){
   .logo{
     display: none;
